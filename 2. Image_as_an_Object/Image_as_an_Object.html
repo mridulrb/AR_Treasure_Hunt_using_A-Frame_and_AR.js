@@ -1,0 +1,19 @@
+<!-- Augmented Reality on the Web in 10 lines of html! https://github.com/jeromeetienne/ar.js --> 
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
+<script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded artoolkit='sourceType: webcam;'>
+	<a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5"              position="0 0.5 0" segments-height="53">
+         <a-animation attribute="scale"
+              dur="2000"
+              from= "0 0 0"
+              to="5 5 5"
+              direction='alternate-reverse'
+              easing= "ease-in-out-circ"     
+              repeat="indefinite"></a-animation>
+     </a-sphere>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>
+
