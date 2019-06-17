@@ -231,3 +231,7 @@ UserState.prototype.hasBuilderTool = function(builder) {
 
 var userState = new UserState();
 ```
+
+
+## References
+AR Treasure Hunt - https://www.womenwhocode.com/blog/building-an-augmented-reality-treasure-hunt-with-a-frame-and-ar-js
